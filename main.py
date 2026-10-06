@@ -43,9 +43,13 @@ patient1 = Patient("John Doe",101, 23, "Male", "Flu")
 patient2 = Patient(" Jane Smith",102, 28, "Female", "Cold")
 patient3 = Patient("Michael Johnson",103, 42, "Male", "Diabetes")
 
-# Hospital object and communication between classes
-hospital = Hospital("Donal d Clinic")
-for patient in [patient1, patient2, patient3]:
-    hospital.add_patient(patient)
+# Hospital objects
+hospital = Hospital("Donal  d Clinic")
 
+#Add patients to the hospital using the add_patient method 
+hospital.add_patient(patient1)
+hospital.add_patient(patient2)
+hospital.add_patient(patient3)
+
+#Display all patients record in the hospital
 hospital.display_patients()
